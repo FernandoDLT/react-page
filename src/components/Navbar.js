@@ -3,11 +3,12 @@ import React from "react"
 export default function Navbar(props) {
    return (
       <nav 
-         className={props.darkMode ? "dark" : ""}
+         className={props.darkMode ? "dark": ""}
       >
          <img
-            className="nav--icon"
-            src="\logo192.png" alt=""  />
+            className="nav--logo_icon"
+            src="\logo192.png" alt="" 
+         />
          <h3 className="nav--logo_text">ReactFacts</h3>
 
          <div
@@ -16,13 +17,12 @@ export default function Navbar(props) {
             <p className="toggler--light">Light</p>
             <div
                className="toggler--slider"
-               onClick={props.togglerDarkMode}
+               onClick={props.toggleDarkMode}
             >
-               <div className="toggler--slide--circle"></div>
+               <div className="toggler--slider--circle"></div>
             </div>
             <p className="toggler--dark">Dark</p>
-         </div>
-         
+         </div>     
       </nav>
    )
 }
